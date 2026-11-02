@@ -51,7 +51,7 @@ jobs:
           exit 1
         }
 
-        # Убираем возможный префикс 'v' для дальнейшей обработки
+        # Убираем возможный префикс "v" для дальнейшей обработки
         $versionClean = $version -replace '^v', ''
 
         Write-Output "VERSION=$versionClean" >> $env:GITHUB_ENV
